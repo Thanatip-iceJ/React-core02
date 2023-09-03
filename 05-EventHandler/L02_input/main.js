@@ -1,4 +1,13 @@
 // ReactDOM
+
+function App() {
+// const handleChange = (e) => console.log();
+
+    return (
+        <input type='text' onChange={(e) => console.log(e.target.value)} />
+    )
+}
+
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+root.render(<App />);

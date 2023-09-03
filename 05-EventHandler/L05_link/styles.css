@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h1 {
@@ -17,4 +17,10 @@ h1 {
     text-align: center;
     margin: 3rem 0;
     /* color: red; */
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
 }

@@ -8,7 +8,7 @@ const Mosquito = () => {
             setPosition({ x: newX, y: newY });
             setIsDead(false);
         };
-        const interval = setInterval(updatePosition, 500);
+        const interval = setInterval(updatePosition, 5000);
         return () => {
             clearInterval(interval);
         };
@@ -26,6 +26,7 @@ const Mosquito = () => {
                 cursor: 'pointer',
                 borderRadius: '50%',
             }}
+            onClick={() => alert('Dead')}
         />
     );
 };
